@@ -1,0 +1,9 @@
+SELECT * FROM `products` WHERE `price` BETWEEN 10 AND 20;
+
+SELECT * FROM `products` WHERE `price` NOT BETWEEN 10 AND 20;
+
+SELECT * FROM `products` WHERE `category_id` IN (1, 2, 3);
+
+SELECT * FROM `orders` WHERE `shipper_id` IN (1, 2, 3);
+
+SELECT * FROM `products` WHERE `price` BETWEEN 10 AND 15 AND NOT `category_id` IN (1, 2, 3, 4);
