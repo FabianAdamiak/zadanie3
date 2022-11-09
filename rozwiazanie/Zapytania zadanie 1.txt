@@ -12,4 +12,4 @@ SELECT * FROM `customers` ORDER BY `country` ASC;
 
 SELECT * FROM `customers` ORDER BY `country` DESC;
 
-SELECT * FROM `customers`g ORDER BY `country` DESC, `customer_name` ASC;
+SELECT * FROM `customers` ORDER BY `country` DESC, `customer_name` ASC;

@@ -1,0 +1,15 @@
+SELECT MIN(price) FROM `products`;
+
+SELECT MAX(price) FROM `products`;
+
+SELECT count(name) FROM `products`; 
+
+SELECT count(customer_name) FROM `customers`; 
+
+SELECT count(customer_name) FROM `customers` GROUP BY `country`;
+
+SELECT COUNT(name), AVG(`price`) FROM `products` WHERE `category_id`=1;
+
+SELECT SUM(price) FROM `products` WHERE `category_id`=2;
+
+SELECT MAX(price) FROM `products` GROUP BY `category_id`;
