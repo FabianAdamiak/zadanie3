@@ -1,0 +1,4 @@
+ZAD CASE
+1. SELECT products.name, orders_details.quantity, CASE WHEN quantity > 30 THEN "Liczba sztuk jest większa niż 30" WHEN quantity = 30 THEN "Liczba sztuk jest równa 30" 
+WHEN quantity < 30 THEN "Liczba sztuk jest mniejsza niż 30" END FROM `orders_details` JOIN products ON products.id = orders_details.product_id;
+2. SELECT customer_name FROM customers ORDER BY CASE WHEN city = NULL THEN country ELSE city END;
